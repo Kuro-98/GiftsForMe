@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  /* 1REM = 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+
+.titular {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.parrafo-main {
+  text-align: center;
+  color: #9b9a9a;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 35rem;
+  display: flex;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 4rem;
+  padding: 5rem 0;
+}
+
+.gift {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #EAEAEA;
+  border-radius: 1rem;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+  padding: 4rem;
+  background: #fff;
+}
+
+.gift img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  display: block;
+}
+
+.container-img {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container .gift:nth-child(4) .container-img {
+  background: linear-gradient(to bottom, #E43C25 0%, #B81D25 100%);
+  display: flex;
+  justify-content: end;
+}
+
+.gift:nth-child(1):hover .container-intern .container-img img {
+  content: url('./Images/Sudadera2.jpg');
+}
+
+.gift:nth-child(2):hover .container-intern .container-img img {
+  content: url('./Images/perfume2.jpg');
+}
+
+.gift:nth-child(3):hover .container-intern .container-img img {
+  content: url('./Images/bandolera2.jpg');
+}
+
+.gift:nth-child(4):hover .container-intern .container-img img {
+  content: url('./Images/kaiju2.jpg');
+}
+
+
+
+.texts {
+  border-top: 1px solid rgba(0, 0, 0, .5);
+}
+
+.texts h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.texts p {
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.texts span {
+  color: #47ccab;
+  padding: 1rem;
+  background: #EAEAEA;
+  border-radius: 1rem;
+}
